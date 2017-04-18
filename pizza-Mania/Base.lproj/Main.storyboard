@@ -1,0 +1,889 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h1e-jM-ZZM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pizza-Fotolia_41104275_S" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-m6-ONt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIZZA MANIA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROg-iY-l3U">
+                                <rect key="frame" x="62" y="118" width="290" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="hrJ-Jf-P77"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyr-T5-gBm">
+                                <rect key="frame" x="98.666666666666686" y="344.66666666666669" width="217" height="47"/>
+                                <color key="backgroundColor" red="0.2608068697" green="0.67873572339999999" blue="0.3461153501" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="BHH-bM-XRc"/>
+                                    <constraint firstAttribute="width" constant="217" id="l2k-1H-NGb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="21"/>
+                                <inset key="titleEdgeInsets" minX="-40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="-90" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="   Carte" image="Map-50">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCarteAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vYr-oD-7dU"/>
+                                    <segue destination="MbG-Vt-3ca" kind="show" id="i4R-mM-k7k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DXh-Sr-nad">
+                                <rect key="frame" x="98.666666666666686" y="418.66666666666669" width="217" height="47"/>
+                                <color key="backgroundColor" red="0.87454394040000005" green="0.092619453229999996" blue="0.1417801353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="62K-bS-zuU"/>
+                                    <constraint firstAttribute="width" constant="217" id="LbZ-gR-6jM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="21"/>
+                                <inset key="imageEdgeInsets" minX="-30" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Coordonnées" image="Phone-50">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCoordonneeAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jiy-vG-2X6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzeria &amp; Snack" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7B-6d-ESE">
+                                <rect key="frame" x="93.666666666666686" y="186" width="227" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="fVK-l7-3be"/>
+                                    <constraint firstAttribute="width" constant="227" id="fhO-pX-Cam"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="31"/>
+                                <color key="textColor" red="1" green="0.096745370230000002" blue="0.14870694509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Heure d'ouverture 11h à 14h30 &amp; 18h à 23h                                                     LIVRAISON gratuite de 18h30 à 22h" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slA-b1-z9V">
+                                <rect key="frame" x="20" y="695" width="374" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="R78-UL-Ffh"/>
+                                    <constraint firstAttribute="width" constant="374" id="wkA-Mq-nTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imgScoot" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-vd-oNK">
+                                <rect key="frame" x="20" y="580" width="91" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Q3h-F9-HGJ"/>
+                                    <constraint firstAttribute="width" constant="91" id="WpB-pD-bw0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sur Place / Livraison" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-l5-BgB">
+                                <rect key="frame" x="121.66666666666669" y="649" width="171" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="171" id="roH-IB-DOR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CvQ-m6-ONt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2Yy-18-zJ3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="slA-b1-z9V" secondAttribute="bottom" constant="8" symbolic="YES" id="5qT-dq-SjZ"/>
+                            <constraint firstItem="lG7-l5-BgB" firstAttribute="centerX" secondItem="jyr-T5-gBm" secondAttribute="centerX" id="8ns-0O-VQS"/>
+                            <constraint firstAttribute="trailing" secondItem="CvQ-m6-ONt" secondAttribute="trailing" id="A10-dh-2Cd"/>
+                            <constraint firstItem="jyr-T5-gBm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B2P-gn-Rdv"/>
+                            <constraint firstItem="slA-b1-z9V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cdw-o0-u7P"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CvQ-m6-ONt" secondAttribute="bottom" id="LoF-gs-m8y"/>
+                            <constraint firstItem="DXh-Sr-nad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LrC-2f-tLq"/>
+                            <constraint firstItem="S2F-vd-oNK" firstAttribute="bottom" secondItem="lG7-l5-BgB" secondAttribute="bottom" id="NFT-MN-oFv"/>
+                            <constraint firstItem="DXh-Sr-nad" firstAttribute="top" secondItem="jyr-T5-gBm" secondAttribute="bottom" constant="27" id="PIF-39-rZi"/>
+                            <constraint firstItem="S2F-vd-oNK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PgN-dM-EAP"/>
+                            <constraint firstItem="u7B-6d-ESE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vhe-Z8-ntj"/>
+                            <constraint firstItem="jyr-T5-gBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bs2-ML-adx"/>
+                            <constraint firstItem="ROg-iY-l3U" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="cLO-OO-fgt"/>
+                            <constraint firstItem="u7B-6d-ESE" firstAttribute="top" secondItem="ROg-iY-l3U" secondAttribute="bottom" constant="17" id="emY-PE-a88"/>
+                            <constraint firstItem="S2F-vd-oNK" firstAttribute="top" secondItem="DXh-Sr-nad" secondAttribute="bottom" constant="114.33333333333331" id="reb-1x-SHC"/>
+                            <constraint firstItem="CvQ-m6-ONt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rfC-lc-EP5"/>
+                            <constraint firstItem="lG7-l5-BgB" firstAttribute="top" secondItem="ROg-iY-l3U" secondAttribute="bottom" constant="480" id="uIL-xH-hEn"/>
+                            <constraint firstItem="ROg-iY-l3U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xhO-QT-cxZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lAe-Yu-gUf"/>
+                    <connections>
+                        <outlet property="buttonCarteTap" destination="jyr-T5-gBm" id="van-Mc-GfE"/>
+                        <outlet property="buttonCoordonneeTap" destination="DXh-Sr-nad" id="FuF-vb-hnS"/>
+                        <outlet property="viewCoordonnee" destination="TYb-DR-1xc" id="RS8-Rv-bIb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="TYb-DR-1xc">
+                    <rect key="frame" x="0.0" y="0.0" width="316" height="146"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUT-mt-L66">
+                            <rect key="frame" x="0.0" y="0.0" width="316" height="91"/>
+                            <connections>
+                                <action selector="dismissButtonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNC-pQ-s9A"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ka-0b-vGn">
+                            <rect key="frame" x="16" y="0.0" width="284" height="101"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="101" id="Jhn-Cn-6eS"/>
+                                <constraint firstAttribute="width" constant="284" id="yk9-Pb-2gt"/>
+                            </constraints>
+                            <string key="text">Adresse : 48 avenue de la République
+13310 St Martin de Crau</string>
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Téléphone :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gx-4y-cJh">
+                            <rect key="frame" x="54" y="109" width="98" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="98" id="JMK-jh-UF6"/>
+                                <constraint firstAttribute="height" constant="21" id="rsx-J1-udK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djy-Fz-YRK">
+                            <rect key="frame" x="166" y="104" width="119" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="mcy-1R-xMy"/>
+                                <constraint firstAttribute="width" constant="119" id="nAx-zr-5px"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                            <state key="normal" title="04 90 97 08 25"/>
+                            <connections>
+                                <action selector="callPhoneButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hg4-bS-UKk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="1Ka-0b-vGn" firstAttribute="top" secondItem="TYb-DR-1xc" secondAttribute="top" id="2LF-Ow-P5d"/>
+                        <constraint firstAttribute="trailing" secondItem="WUT-mt-L66" secondAttribute="trailing" id="3fg-d8-o4a"/>
+                        <constraint firstItem="5gx-4y-cJh" firstAttribute="leading" secondItem="TYb-DR-1xc" secondAttribute="leading" constant="54" id="5We-D3-ebS"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="3" id="9cc-Cg-ivA"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="4" id="Gjr-WQ-Gwj"/>
+                        <constraint firstItem="1Ka-0b-vGn" firstAttribute="top" secondItem="TYb-DR-1xc" secondAttribute="top" id="JaJ-cR-TUt"/>
+                        <constraint firstItem="1Ka-0b-vGn" firstAttribute="centerX" secondItem="TYb-DR-1xc" secondAttribute="centerX" id="NyV-2w-sha"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="3" id="SmJ-Y1-BJd"/>
+                        <constraint firstItem="5gx-4y-cJh" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="8" id="eW0-eQ-hsT"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="3" id="hGd-GF-jbI"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="1Ka-0b-vGn" secondAttribute="bottom" constant="3" id="j63-e5-eOc"/>
+                        <constraint firstItem="WUT-mt-L66" firstAttribute="top" secondItem="TYb-DR-1xc" secondAttribute="top" id="kAi-US-nNm"/>
+                        <constraint firstItem="WUT-mt-L66" firstAttribute="leading" secondItem="TYb-DR-1xc" secondAttribute="leading" id="mCw-In-lqU"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="leading" secondItem="5gx-4y-cJh" secondAttribute="trailing" constant="14" id="tgI-oP-7Yx"/>
+                        <constraint firstItem="Djy-Fz-YRK" firstAttribute="top" secondItem="WUT-mt-L66" secondAttribute="bottom" constant="13" id="uof-pr-FiD"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="1950.7246376811595" y="138.58695652173915"/>
+        </scene>
+        <!--PETITE FAIM-->
+        <scene sceneID="LC4-CX-nak">
+            <objects>
+                <viewController id="sV7-Al-MOX" customClass="ViewControllerPFaim" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VHk-fn-CC4"/>
+                        <viewControllerLayoutGuide type="bottom" id="3b9-EB-lqC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EDa-Mf-Jl0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aAP-ef-CoX">
+                                <rect key="frame" x="0.0" y="83" width="414" height="604"/>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CWj-gF-vjx">
+                                    <size key="itemSize" width="164" height="207"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Prototype5" id="JcL-Gh-wep" customClass="CollectionViewCellPFaim" customModule="pizza_Mania" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5W-Mc-2Rm">
+                                                    <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-yd-iWB">
+                                                    <rect key="frame" x="0.0" y="6" width="164" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ZEG-ww-HNj"/>
+                                                        <constraint firstAttribute="width" constant="164" id="ghy-Kb-20d"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPrix" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jI-UN-t1t">
+                                                    <rect key="frame" x="0.0" y="132" width="164" height="75"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="75" id="J8e-lp-gXL"/>
+                                                        <constraint firstAttribute="width" constant="164" id="cBX-bH-e7G"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="x5W-Mc-2Rm" firstAttribute="top" secondItem="JcL-Gh-wep" secondAttribute="top" id="81H-F3-TAU"/>
+                                            <constraint firstItem="JjK-yd-iWB" firstAttribute="top" secondItem="JcL-Gh-wep" secondAttribute="top" constant="6" id="9B5-8f-15c"/>
+                                            <constraint firstItem="5jI-UN-t1t" firstAttribute="centerX" secondItem="JcL-Gh-wep" secondAttribute="centerX" id="Ocr-uF-iQg"/>
+                                            <constraint firstAttribute="bottom" secondItem="5jI-UN-t1t" secondAttribute="bottom" id="cAI-E7-n0A"/>
+                                            <constraint firstItem="x5W-Mc-2Rm" firstAttribute="leading" secondItem="JcL-Gh-wep" secondAttribute="leading" id="cf3-uU-ftb"/>
+                                            <constraint firstItem="JjK-yd-iWB" firstAttribute="centerX" secondItem="JcL-Gh-wep" secondAttribute="centerX" id="fJI-jB-Tph"/>
+                                            <constraint firstAttribute="trailing" secondItem="x5W-Mc-2Rm" secondAttribute="trailing" id="mpS-fP-GV3"/>
+                                            <constraint firstAttribute="bottom" secondItem="x5W-Mc-2Rm" secondAttribute="bottom" id="pVk-tg-HBb"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="ImageCover" destination="x5W-Mc-2Rm" id="QAi-do-3uu"/>
+                                            <outlet property="labelPrix" destination="5jI-UN-t1t" id="Erb-bB-RYY"/>
+                                            <outlet property="labelTitre" destination="JjK-yd-iWB" id="89o-Xv-fJf"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="sV7-Al-MOX" id="O8C-rT-MX8"/>
+                                    <outlet property="delegate" destination="sV7-Al-MOX" id="XTi-gF-MRX"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fj9-j7-u9Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="132"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIZZA MANIA VOUS PROPOSE :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvh-lp-KwA">
+                                        <rect key="frame" x="8" y="64" width="398" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="9fO-Rj-dcV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rvh-lp-KwA" firstAttribute="trailing" secondItem="Fj9-j7-u9Y" secondAttribute="trailingMargin" id="8f4-bz-Gqm"/>
+                                    <constraint firstItem="rvh-lp-KwA" firstAttribute="top" secondItem="Fj9-j7-u9Y" secondAttribute="top" constant="64" id="ux5-IM-jTp"/>
+                                    <constraint firstItem="rvh-lp-KwA" firstAttribute="leading" secondItem="Fj9-j7-u9Y" secondAttribute="leadingMargin" id="vVo-ER-EDx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aAP-ef-CoX" firstAttribute="bottom" secondItem="3b9-EB-lqC" secondAttribute="top" id="0YG-iH-CGn"/>
+                            <constraint firstItem="Fj9-j7-u9Y" firstAttribute="leading" secondItem="EDa-Mf-Jl0" secondAttribute="leading" id="4yw-bx-pn3"/>
+                            <constraint firstItem="Fj9-j7-u9Y" firstAttribute="leading" secondItem="aAP-ef-CoX" secondAttribute="leading" id="BKc-wQ-Nfp"/>
+                            <constraint firstItem="3b9-EB-lqC" firstAttribute="top" secondItem="Fj9-j7-u9Y" secondAttribute="bottom" constant="555" id="CTU-EQ-MRw"/>
+                            <constraint firstItem="Fj9-j7-u9Y" firstAttribute="top" secondItem="VHk-fn-CC4" secondAttribute="bottom" constant="-64" id="DiU-G0-nJr"/>
+                            <constraint firstAttribute="trailing" secondItem="Fj9-j7-u9Y" secondAttribute="trailing" id="J31-fs-ejG"/>
+                            <constraint firstItem="aAP-ef-CoX" firstAttribute="top" secondItem="VHk-fn-CC4" secondAttribute="bottom" constant="19" id="aiY-Ta-XL1"/>
+                            <constraint firstItem="Fj9-j7-u9Y" firstAttribute="trailing" secondItem="aAP-ef-CoX" secondAttribute="trailing" id="gnQ-7a-Opv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PETITE FAIM" image="Hamburger-50" id="pAT-7h-dXk"/>
+                    <navigationItem key="navigationItem" id="NmL-fL-cuN">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myCollectionView" destination="aAP-ef-CoX" id="kmt-sM-6CE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyH-uC-3N3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4662.3188405797109" y="1187.771739130435"/>
+        </scene>
+        <!--PIZZA-->
+        <scene sceneID="a35-fd-cvB">
+            <objects>
+                <viewController id="lua-EP-Kdg" customClass="ViewControllerPizza" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mLD-9e-GqO"/>
+                        <viewControllerLayoutGuide type="bottom" id="EBH-0E-Nap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VFh-q2-bg9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ezR-zD-FNp">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bix-fQ-IFP">
+                                    <size key="itemSize" width="395" height="202"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Prototype1" id="sSP-LM-Fpm" customClass="CollectionViewCellPizza" customModule="pizza_Mania" customModuleProvider="target">
+                                        <rect key="frame" x="9.6666666666666661" y="0.0" width="395" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="395" height="202"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEU-mL-RkD">
+                                                    <rect key="frame" x="0.0" y="0.0" width="395" height="202"/>
+                                                    <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelCategorie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-Iw-oMV">
+                                                    <rect key="frame" x="12" y="65" width="363" height="52"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="52" id="6cR-mS-EUn"/>
+                                                        <constraint firstAttribute="width" constant="363" id="W5t-gp-5mN"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="UEU-mL-RkD" firstAttribute="top" secondItem="sSP-LM-Fpm" secondAttribute="top" id="4bc-NB-jl4"/>
+                                            <constraint firstItem="iFX-Iw-oMV" firstAttribute="centerX" secondItem="sSP-LM-Fpm" secondAttribute="centerX" constant="-4" id="QFE-VF-BC0"/>
+                                            <constraint firstItem="UEU-mL-RkD" firstAttribute="leading" secondItem="sSP-LM-Fpm" secondAttribute="leading" id="Qi3-rf-AGh"/>
+                                            <constraint firstAttribute="bottom" secondItem="UEU-mL-RkD" secondAttribute="bottom" id="bim-qi-x83"/>
+                                            <constraint firstAttribute="trailing" secondItem="UEU-mL-RkD" secondAttribute="trailing" id="cNY-H8-hfr"/>
+                                            <constraint firstItem="iFX-Iw-oMV" firstAttribute="top" secondItem="sSP-LM-Fpm" secondAttribute="top" constant="65" id="vpf-EA-7Rk"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imagePizza" destination="UEU-mL-RkD" id="8WR-3m-eqp"/>
+                                            <outlet property="labelCategorie" destination="iFX-Iw-oMV" id="qsq-89-47p"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lua-EP-Kdg" id="cCN-ms-9Sj"/>
+                                    <outlet property="delegate" destination="lua-EP-Kdg" id="RKw-8x-Zso"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NGR-5N-eG2">
+                                <rect key="frame" x="0.0" y="64" width="414" height="58"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Diamètre des Pizzas: 40cm, Ingrédients Supp 1.00€" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-Ej-IBB">
+                                        <rect key="frame" x="0.0" y="37" width="414" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="7eu-9N-xKp"/>
+                                            <constraint firstAttribute="height" constant="21" id="o02-nt-4Ys"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIZZA MANIA VOUS PROPOSE :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X91-vR-OLh">
+                                        <rect key="frame" x="55" y="8" width="304" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="GcA-PI-6SQ"/>
+                                            <constraint firstAttribute="width" constant="304" id="U9W-Y7-NwM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="X91-vR-OLh" firstAttribute="top" secondItem="NGR-5N-eG2" secondAttribute="top" constant="8" id="VQp-3V-ps1"/>
+                                    <constraint firstItem="Xsm-Ej-IBB" firstAttribute="top" secondItem="X91-vR-OLh" secondAttribute="bottom" constant="8" id="eUm-go-4M6"/>
+                                    <constraint firstItem="Xsm-Ej-IBB" firstAttribute="centerX" secondItem="NGR-5N-eG2" secondAttribute="centerX" id="g2R-b2-xHr"/>
+                                    <constraint firstItem="Xsm-Ej-IBB" firstAttribute="centerX" secondItem="X91-vR-OLh" secondAttribute="centerX" id="pJC-eM-vx8"/>
+                                    <constraint firstItem="Xsm-Ej-IBB" firstAttribute="top" secondItem="X91-vR-OLh" secondAttribute="bottom" constant="8" id="sXZ-oD-dme"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NGR-5N-eG2" firstAttribute="trailing" secondItem="ezR-zD-FNp" secondAttribute="trailing" id="1gT-2t-JNh"/>
+                            <constraint firstItem="ezR-zD-FNp" firstAttribute="top" secondItem="mLD-9e-GqO" secondAttribute="bottom" id="1t7-Uz-KEP"/>
+                            <constraint firstAttribute="trailing" secondItem="NGR-5N-eG2" secondAttribute="trailing" id="2Wz-JE-Vtq"/>
+                            <constraint firstItem="NGR-5N-eG2" firstAttribute="top" secondItem="ezR-zD-FNp" secondAttribute="top" id="OWS-UZ-rIn"/>
+                            <constraint firstItem="NGR-5N-eG2" firstAttribute="leading" secondItem="ezR-zD-FNp" secondAttribute="leading" id="QdN-AJ-klw"/>
+                            <constraint firstItem="EBH-0E-Nap" firstAttribute="top" secondItem="NGR-5N-eG2" secondAttribute="bottom" constant="565" id="WFR-rF-XoK"/>
+                            <constraint firstAttribute="bottom" secondItem="ezR-zD-FNp" secondAttribute="bottom" id="ece-S9-dFQ"/>
+                            <constraint firstAttribute="bottom" secondItem="ezR-zD-FNp" secondAttribute="bottom" id="lkk-1o-x5j"/>
+                            <constraint firstItem="NGR-5N-eG2" firstAttribute="leading" secondItem="VFh-q2-bg9" secondAttribute="leading" id="vwq-8U-H6l"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PIZZA" image="Pizza-50" id="78I-b3-azI"/>
+                    <navigationItem key="navigationItem" id="dVJ-MR-aH0">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="myCollectionView" destination="ezR-zD-FNp" id="ikt-5o-TNi"/>
+                        <segue destination="3DJ-E8-28I" kind="show" identifier="segue.pizza" id="aXw-ra-Vhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhu-Lh-Bcd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4663.768115942029" y="-188.31521739130437"/>
+        </scene>
+        <!--SANDWICH-->
+        <scene sceneID="x3v-cY-j1r">
+            <objects>
+                <tableViewController id="uQW-QH-fRr" customClass="TableViewControllerSandwich" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="258" sectionHeaderHeight="28" sectionFooterHeight="28" id="Eh4-tS-gpe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="rM6-9l-2eX">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PIZZA MANIA VOUS PROPOSE :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NE9-iC-rBB">
+                                    <rect key="frame" x="8" y="12" width="398" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="36" id="ORZ-0f-gw7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="NE9-iC-rBB" firstAttribute="leading" secondItem="rM6-9l-2eX" secondAttribute="leadingMargin" id="71w-M9-6nb"/>
+                                <constraint firstItem="NE9-iC-rBB" firstAttribute="top" secondItem="rM6-9l-2eX" secondAttribute="top" constant="12" id="cZG-cy-Y80"/>
+                                <constraint firstItem="NE9-iC-rBB" firstAttribute="trailing" secondItem="rM6-9l-2eX" secondAttribute="trailingMargin" id="iqj-yQ-F4s"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Prototype3" rowHeight="258" id="5zY-h1-wke" customClass="TableViewCellSandwich" customModule="pizza_Mania" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="258"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5zY-h1-wke" id="euS-qq-2FT">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RFc-Zl-DZy">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="234"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelTitre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v40-Wx-7Eu">
+                                            <rect key="frame" x="60.666666666666657" y="8" width="293" height="33"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="nZI-wJ-iHQ"/>
+                                                <constraint firstAttribute="width" constant="293" id="tiL-Jm-pga"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viandes:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwe-Dp-tZa">
+                                            <rect key="frame" x="166" y="49" width="80" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="JiJ-0w-Rrw"/>
+                                                <constraint firstAttribute="width" constant="80" id="v6d-p6-Idb"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelViande" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDr-MK-5oF">
+                                            <rect key="frame" x="8" y="73" width="398" height="42"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="398" id="cmg-LO-SR7"/>
+                                                <constraint firstAttribute="height" constant="42" id="kZj-0T-oPr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPrix" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvp-12-Y4C">
+                                            <rect key="frame" x="281" y="177" width="133" height="57"/>
+                                            <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="133" id="WDP-Ef-php"/>
+                                                <constraint firstAttribute="height" constant="57" id="dmg-41-Rho"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTk-Pf-0w3" userLabel="LabelIngredient">
+                                            <rect key="frame" x="7" y="136" width="398" height="41"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="41" id="fQV-Kn-JM4"/>
+                                                <constraint firstAttribute="width" constant="398" id="q7O-ws-ao2"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-pg-hdh">
+                                            <rect key="frame" x="8" y="195" width="265" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="Q8e-9D-Ky0"/>
+                                                <constraint firstAttribute="width" constant="265" id="yWb-t8-unK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrédients:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvx-RP-Ydr">
+                                            <rect key="frame" x="150.66666666666669" y="119" width="113.00000000000006" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="43p-gu-Uc4"/>
+                                                <constraint firstAttribute="width" constant="113" id="fl2-tH-edQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Rwe-Dp-tZa" firstAttribute="top" secondItem="v40-Wx-7Eu" secondAttribute="bottom" constant="8" id="1ak-Kd-whq"/>
+                                        <constraint firstItem="vTk-Pf-0w3" firstAttribute="top" secondItem="kvx-RP-Ydr" secondAttribute="bottom" constant="-4" id="Aug-sK-X0B"/>
+                                        <constraint firstItem="RFc-Zl-DZy" firstAttribute="bottom" secondItem="fvp-12-Y4C" secondAttribute="bottom" id="H6v-UV-xmc"/>
+                                        <constraint firstItem="v40-Wx-7Eu" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" id="PFM-5c-hdP"/>
+                                        <constraint firstItem="kvx-RP-Ydr" firstAttribute="top" secondItem="lDr-MK-5oF" secondAttribute="bottom" constant="4" id="SLF-fE-WkG"/>
+                                        <constraint firstItem="RFc-Zl-DZy" firstAttribute="top" secondItem="euS-qq-2FT" secondAttribute="top" id="SPl-1k-MAf"/>
+                                        <constraint firstItem="qRj-pg-hdh" firstAttribute="leading" secondItem="euS-qq-2FT" secondAttribute="leading" constant="8" id="Swk-40-XPg"/>
+                                        <constraint firstItem="RFc-Zl-DZy" firstAttribute="leading" secondItem="euS-qq-2FT" secondAttribute="leading" id="ak4-Ta-0xX"/>
+                                        <constraint firstAttribute="trailing" secondItem="RFc-Zl-DZy" secondAttribute="trailing" id="bOD-5l-yQe"/>
+                                        <constraint firstItem="vTk-Pf-0w3" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" constant="-1" id="dm1-hp-DCe"/>
+                                        <constraint firstItem="qRj-pg-hdh" firstAttribute="top" secondItem="vTk-Pf-0w3" secondAttribute="bottom" constant="18" id="jGF-rG-dSA"/>
+                                        <constraint firstItem="lDr-MK-5oF" firstAttribute="top" secondItem="Rwe-Dp-tZa" secondAttribute="bottom" id="jsp-Tl-4cP"/>
+                                        <constraint firstItem="v40-Wx-7Eu" firstAttribute="top" secondItem="euS-qq-2FT" secondAttribute="top" constant="8" id="kg9-uE-Dkb"/>
+                                        <constraint firstItem="kvx-RP-Ydr" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" id="pNV-XQ-pZ3"/>
+                                        <constraint firstItem="Rwe-Dp-tZa" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" constant="-1" id="qKM-gz-iWb"/>
+                                        <constraint firstAttribute="bottom" secondItem="fvp-12-Y4C" secondAttribute="bottom" constant="24" id="qc7-mN-LQM"/>
+                                        <constraint firstAttribute="trailing" secondItem="fvp-12-Y4C" secondAttribute="trailing" id="rOj-WN-N3v"/>
+                                        <constraint firstItem="lDr-MK-5oF" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" id="w02-2T-Mgq"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="imageCover" destination="RFc-Zl-DZy" id="x6m-nf-8K6"/>
+                                    <outlet property="labelIngredient" destination="vTk-Pf-0w3" id="PD7-Cc-zKZ"/>
+                                    <outlet property="labelPain" destination="qRj-pg-hdh" id="6r7-Zi-7eT"/>
+                                    <outlet property="labelPrix" destination="fvp-12-Y4C" id="t58-hL-iKS"/>
+                                    <outlet property="labelTitre" destination="v40-Wx-7Eu" id="sPC-qL-81d"/>
+                                    <outlet property="labelViande" destination="lDr-MK-5oF" id="IYP-eg-MLD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uQW-QH-fRr" id="E0J-Uk-ENp"/>
+                            <outlet property="delegate" destination="uQW-QH-fRr" id="oxO-lW-hzN"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="SANDWICH" image="Sandwich-50-2" id="Umf-Th-65h"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NqI-nk-q5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4665" y="505.98591549295776"/>
+        </scene>
+        <!--OFFRE DU MOMENT-->
+        <scene sceneID="cyu-kG-GPG">
+            <objects>
+                <viewController id="WaI-PL-vUu" customClass="ViewControllerOffre" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="htX-Bz-ufr"/>
+                        <viewControllerLayoutGuide type="bottom" id="VjU-yK-2GW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n9t-Yp-uCD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OFFRE DU MOMENT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6b-JF-RCn">
+                                <rect key="frame" x="88" y="86" width="238" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="dge-TZ-qjO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bE-4T-ZNl">
+                                <rect key="frame" x="0.0" y="134" width="414" height="214"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="boite pizza" translatesAutoresizingMaskIntoConstraints="NO" id="S40-e7-LFx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="214"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="214" id="WNZ-HS-YfU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="S40-e7-LFx" firstAttribute="leading" secondItem="6bE-4T-ZNl" secondAttribute="leading" id="POp-bi-HcA"/>
+                                    <constraint firstItem="S40-e7-LFx" firstAttribute="top" secondItem="6bE-4T-ZNl" secondAttribute="topMargin" constant="-8" id="jKo-v3-skG"/>
+                                    <constraint firstItem="S40-e7-LFx" firstAttribute="trailing" secondItem="6bE-4T-ZNl" secondAttribute="trailing" id="n84-8h-Khq"/>
+                                    <constraint firstAttribute="trailing" secondItem="S40-e7-LFx" secondAttribute="trailing" id="uqZ-eG-oiw"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 PIZZAS ACHETEES 1 Bouteille Offerte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXS-lV-OSq">
+                                <rect key="frame" x="82.666666666666686" y="377" width="249" height="68"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="249" id="8jO-Vq-Cyu"/>
+                                    <constraint firstAttribute="height" constant="68" id="Q3h-M4-2dL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 PIZZAS ACHETEES 1 Pizza Fromage Offerte" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBQ-B2-deg">
+                                <rect key="frame" x="81" y="470" width="250" height="68"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="CzW-oe-391"/>
+                                    <constraint firstAttribute="width" constant="250" id="zms-hW-M1F"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 PIZZAS ACHETEES = 11EME OFFERTE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rn6-Wd-atO">
+                                <rect key="frame" x="82.666666666666686" y="560" width="249" height="68"/>
+                                <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="EPk-PY-zTJ"/>
+                                    <constraint firstAttribute="width" constant="249" id="uXl-VL-hV5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rn6-Wd-atO" firstAttribute="top" secondItem="VBQ-B2-deg" secondAttribute="bottom" constant="22" id="27X-74-rcL"/>
+                            <constraint firstItem="6bE-4T-ZNl" firstAttribute="top" secondItem="S6b-JF-RCn" secondAttribute="bottom" constant="8" symbolic="YES" id="6ZT-zC-Mof"/>
+                            <constraint firstItem="VjU-yK-2GW" firstAttribute="top" secondItem="6bE-4T-ZNl" secondAttribute="bottom" constant="339" id="B7w-Vp-ZOq"/>
+                            <constraint firstItem="pXS-lV-OSq" firstAttribute="top" secondItem="S40-e7-LFx" secondAttribute="bottom" constant="29" id="DaX-PE-nAL"/>
+                            <constraint firstItem="VBQ-B2-deg" firstAttribute="centerX" secondItem="n9t-Yp-uCD" secondAttribute="centerX" constant="-1" id="Dzl-Uz-c7s"/>
+                            <constraint firstItem="pXS-lV-OSq" firstAttribute="top" secondItem="6bE-4T-ZNl" secondAttribute="bottom" constant="29" id="GRZ-cc-Slf"/>
+                            <constraint firstItem="6bE-4T-ZNl" firstAttribute="top" secondItem="S6b-JF-RCn" secondAttribute="bottom" constant="8" id="dUN-DV-CCZ"/>
+                            <constraint firstItem="6bE-4T-ZNl" firstAttribute="leading" secondItem="n9t-Yp-uCD" secondAttribute="leading" id="e0k-qe-H9K"/>
+                            <constraint firstItem="S6b-JF-RCn" firstAttribute="centerX" secondItem="n9t-Yp-uCD" secondAttribute="centerX" id="jtO-Cb-zNL"/>
+                            <constraint firstItem="6bE-4T-ZNl" firstAttribute="centerX" secondItem="S6b-JF-RCn" secondAttribute="centerX" id="l0y-cA-88r"/>
+                            <constraint firstItem="pXS-lV-OSq" firstAttribute="centerX" secondItem="n9t-Yp-uCD" secondAttribute="centerX" id="nBr-hY-WgX"/>
+                            <constraint firstItem="Rn6-Wd-atO" firstAttribute="centerX" secondItem="n9t-Yp-uCD" secondAttribute="centerX" id="tCo-Kt-3pr"/>
+                            <constraint firstItem="VBQ-B2-deg" firstAttribute="top" secondItem="pXS-lV-OSq" secondAttribute="bottom" constant="25" id="urI-YL-NDL"/>
+                            <constraint firstItem="S6b-JF-RCn" firstAttribute="top" secondItem="htX-Bz-ufr" secondAttribute="bottom" constant="22" id="xmY-kp-fFm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="OFFRE DU MOMENT" image="Euro Price Tag-50" id="4XG-87-hsZ"/>
+                    <connections>
+                        <outlet property="imageBoitePizza" destination="S40-e7-LFx" id="a5l-td-fuC"/>
+                        <outlet property="offreView" destination="pXS-lV-OSq" id="vmt-0B-cYt"/>
+                        <outlet property="offreView1" destination="VBQ-B2-deg" id="x9e-xa-zI9"/>
+                        <outlet property="offreView2" destination="Rn6-Wd-atO" id="dYS-Pn-oKP"/>
+                        <outlet property="viewBoitePiza" destination="6bE-4T-ZNl" id="s8Z-vj-00v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3a6-Sy-TVp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3556.521739130435" y="1183.6956521739132"/>
+        </scene>
+        <!--Table View Controller Pizza Description-->
+        <scene sceneID="Cgh-Jv-HUb">
+            <objects>
+                <tableViewController id="3DJ-E8-28I" customClass="TableViewControllerPizzaDescription" customModule="pizza_Mania" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="122" sectionHeaderHeight="28" sectionFooterHeight="28" id="MQg-2Z-brb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="bfz-XS-3fU">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelCategorie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JVB-lp-IhD">
+                                    <rect key="frame" x="28" y="8" width="358" height="38"/>
+                                    <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="38" id="Ec1-gz-IUo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="JVB-lp-IhD" firstAttribute="top" secondItem="bfz-XS-3fU" secondAttribute="top" constant="8" id="crv-Sw-bO2"/>
+                                <constraint firstItem="JVB-lp-IhD" firstAttribute="centerX" secondItem="bfz-XS-3fU" secondAttribute="centerX" id="eDH-bI-YGl"/>
+                                <constraint firstItem="JVB-lp-IhD" firstAttribute="leading" secondItem="bfz-XS-3fU" secondAttribute="leading" constant="28" id="hg7-FC-wP7"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Prototype2" rowHeight="122" id="Vbh-1d-Z85" customClass="TableViewCellPizzaDescription" customModule="pizza_Mania" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="414" height="122"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vbh-1d-Z85" id="1Sy-7y-ZCi">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="122"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-bf-4bk">
+                                            <rect key="frame" x="8" y="8" width="398" height="106"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPizza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ri-kb-trD">
+                                                    <rect key="frame" x="160.66666666666669" y="8" width="94.000000000000028" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="XUp-zC-aew"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPrix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-wJ-TYy">
+                                                    <rect key="frame" x="8" y="8" width="59" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="aQw-ZU-PPB"/>
+                                                        <constraint firstAttribute="height" constant="21" id="jcj-Wa-Kbh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelSousPizza" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-Tb-VJk">
+                                                    <rect key="frame" x="16" y="64" width="382" height="42"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="42" id="lIz-t1-bNo"/>
+                                                        <constraint firstAttribute="width" constant="382" id="nb7-Fw-771"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="15"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="8ri-kb-trD" firstAttribute="top" secondItem="Sca-bf-4bk" secondAttribute="top" constant="8" id="4qI-Ix-plP"/>
+                                                <constraint firstItem="rhb-Tb-VJk" firstAttribute="bottom" secondItem="Sca-bf-4bk" secondAttribute="bottomMargin" constant="8.3333333333333286" id="5M9-fo-uho"/>
+                                                <constraint firstItem="JSe-wJ-TYy" firstAttribute="leading" secondItem="Sca-bf-4bk" secondAttribute="leading" constant="8" id="QsA-md-g5b"/>
+                                                <constraint firstItem="rhb-Tb-VJk" firstAttribute="centerX" secondItem="Sca-bf-4bk" secondAttribute="centerX" constant="8" id="UNi-Gi-080"/>
+                                                <constraint firstItem="rhb-Tb-VJk" firstAttribute="centerX" secondItem="8ri-kb-trD" secondAttribute="centerX" id="fi2-6d-r7k"/>
+                                                <constraint firstItem="JSe-wJ-TYy" firstAttribute="top" secondItem="Sca-bf-4bk" secondAttribute="top" constant="8" id="xpK-Y8-aSE"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrédients:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-jz-7tF">
+                                            <rect key="frame" x="103" y="51" width="208" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="208" id="jVj-xt-Z34"/>
+                                                <constraint firstAttribute="height" constant="21" id="wHr-fs-eYV"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="Sca-bf-4bk" firstAttribute="centerY" secondItem="LUP-jz-7tF" secondAttribute="centerY" id="Hox-Kb-UNN"/>
+                                        <constraint firstItem="Sca-bf-4bk" firstAttribute="top" secondItem="1Sy-7y-ZCi" secondAttribute="topMargin" id="MUp-PJ-YeK"/>
+                                        <constraint firstItem="LUP-jz-7tF" firstAttribute="centerX" secondItem="1Sy-7y-ZCi" secondAttribute="centerX" id="iRR-Iz-hhl"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sca-bf-4bk" secondAttribute="trailing" constant="8" id="o7Y-Ra-5ec"/>
+                                        <constraint firstItem="LUP-jz-7tF" firstAttribute="top" secondItem="1Sy-7y-ZCi" secondAttribute="top" constant="51" id="tie-li-15J"/>
+                                        <constraint firstItem="Sca-bf-4bk" firstAttribute="centerX" secondItem="LUP-jz-7tF" secondAttribute="centerX" id="va9-RY-Lps"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="labelPizza" destination="8ri-kb-trD" id="srP-GR-910"/>
+                                    <outlet property="labelPrix" destination="JSe-wJ-TYy" id="maL-3B-C6Q"/>
+                                    <outlet property="labelSousPizza" destination="rhb-Tb-VJk" id="gJQ-rn-qEh"/>
+                                    <outlet property="viewCustom" destination="Sca-bf-4bk" id="mE2-fV-7kp"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3DJ-E8-28I" id="cGu-aX-HFO"/>
+                            <outlet property="delegate" destination="3DJ-E8-28I" id="0fE-ny-gn7"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="labelCategorie" destination="JVB-lp-IhD" id="90L-sR-IrZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0J-Lu-ZXB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5650.3999999999996" y="-187.55622188905548"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EJx-oH-4bC">
+            <objects>
+                <tabBarController id="MbG-Vt-3ca" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Rnk-rG-pvO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.68235294120000001" green="0.0" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lua-EP-Kdg" kind="relationship" relationship="viewControllers" id="Y4L-3E-1Vf"/>
+                        <segue destination="uQW-QH-fRr" kind="relationship" relationship="viewControllers" id="MuX-mu-nuT"/>
+                        <segue destination="sV7-Al-MOX" kind="relationship" relationship="viewControllers" id="01z-Wc-ulL"/>
+                        <segue destination="WaI-PL-vUu" kind="relationship" relationship="viewControllers" id="uUy-mw-TgN"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xes-Nh-zJl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842.0289855072465" y="138.58695652173915"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nue-21-bVA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="h1e-jM-ZZM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BQP-Xz-7Xl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Q1l-CO-TcZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjt-6j-XmN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1043.4782608695652" y="138.58695652173915"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Euro Price Tag-50" width="25" height="25"/>
+        <image name="Hamburger-50" width="25" height="25"/>
+        <image name="Map-50" width="25" height="25"/>
+        <image name="Phone-50" width="25" height="25"/>
+        <image name="Pizza-50" width="25" height="25"/>
+        <image name="Pizza-Fotolia_41104275_S" width="849" height="566"/>
+        <image name="Sandwich-50-2" width="25" height="25"/>
+        <image name="boite pizza" width="1299" height="736"/>
+        <image name="imgScoot" width="169" height="184"/>
+    </resources>
+</document>

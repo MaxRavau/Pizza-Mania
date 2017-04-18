@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B5C948BAE64D5CCB49C27768C2355DD /* Pods-pizza-Mania-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A420A128FB8B2993718CE979C0451858 /* Pods-pizza-Mania-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D127F5DFBCF0D085C90164B8A7C1955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		18F8E6B4F8DBAA23373AE145828F56F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2464841AA41479BCFACB70AA5803E477 /* Pods-pizza-ManiaUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D352890543768298C8033717E639FBF /* Pods-pizza-ManiaUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		275A6BDD6E5ABAA8D2F8313F709D0897 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6D6132BD62F956B03410CA9D89242CFF /* Pods-pizza-ManiaTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E3F393FDBEA1920FFC794BEA4E8479 /* Pods-pizza-ManiaTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EC2C19220C1F77A29EDE95D418A3004 /* Pods-pizza-Mania-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD1B2CBAFD72D8A005D249D4FEB1C21B /* Pods-pizza-Mania-dummy.m */; };
+		B2717A692F5E8F0867BFCF2EC0DC7D50 /* Pods-pizza-ManiaTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B525F2B5E2A34C886456F212549348D5 /* Pods-pizza-ManiaTests-dummy.m */; };
+		E9B9B6210F975D3E0A8C4FFE5615F581 /* Pods-pizza-ManiaUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FACF020A99C4BD8FC00AEB98E467D882 /* Pods-pizza-ManiaUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00974881C962B32B9FF458F05AA9E30B /* Pods-pizza-Mania-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-Mania-frameworks.sh"; sourceTree = "<group>"; };
+		053E92B1F40E53BCA2EBA40ED8A83ED5 /* Pods_pizza_ManiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pizza_ManiaTests.framework; path = "Pods-pizza-ManiaTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F5A6D4A63E76D4BF4DC8FED68FD8EE /* Pods-pizza-ManiaTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-pizza-ManiaTests.modulemap"; sourceTree = "<group>"; };
+		0D352890543768298C8033717E639FBF /* Pods-pizza-ManiaUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pizza-ManiaUITests-umbrella.h"; sourceTree = "<group>"; };
+		10A870ECFD55C83499B331913DE4C0C8 /* Pods-pizza-ManiaTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pizza-ManiaTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		18CEE29E168B3095BCC0E1610CA2FB85 /* Pods-pizza-ManiaUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-ManiaUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1B294823986FFE924DDE7144ACBEE8C9 /* Pods_pizza_Mania.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pizza_Mania.framework; path = "Pods-pizza-Mania.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		226565EC9ADFC9FC4B57183B16D55104 /* Pods-pizza-ManiaUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pizza-ManiaUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4081888AA44258FE43A9FDEB3DCF4FE5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B8443ABD24DABF140CEED44536E979 /* Pods-pizza-ManiaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-ManiaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		47E9E0B61FF9C5C8C6CA742CC89E6E21 /* Pods-pizza-Mania.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-Mania.debug.xcconfig"; sourceTree = "<group>"; };
+		56A06980F174C92450328437A611D0A1 /* Pods-pizza-ManiaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-ManiaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5FBD446917B7ED96E7585B0CF1C0A193 /* Pods-pizza-Mania.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-pizza-Mania.modulemap"; sourceTree = "<group>"; };
+		6642B4F037FBDF5EF03A6B4E91DCE377 /* Pods-pizza-Mania-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-Mania-resources.sh"; sourceTree = "<group>"; };
+		8149742D9BC5CBEA3E23D1C9D3DEB70D /* Pods-pizza-ManiaUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pizza-ManiaUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8B985B38618DAA66747DC0A4D460A5E4 /* Pods-pizza-ManiaTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pizza-ManiaTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94A35CACCDFBEF2672667C3E33B58199 /* Pods_pizza_ManiaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_pizza_ManiaUITests.framework; path = "Pods-pizza-ManiaUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E3F393FDBEA1920FFC794BEA4E8479 /* Pods-pizza-ManiaTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pizza-ManiaTests-umbrella.h"; sourceTree = "<group>"; };
+		9A96C7F74D2C8E90F3A43CFCFB966FA0 /* Pods-pizza-ManiaTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-ManiaTests-frameworks.sh"; sourceTree = "<group>"; };
+		A420A128FB8B2993718CE979C0451858 /* Pods-pizza-Mania-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pizza-Mania-umbrella.h"; sourceTree = "<group>"; };
+		AD1B2CBAFD72D8A005D249D4FEB1C21B /* Pods-pizza-Mania-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pizza-Mania-dummy.m"; sourceTree = "<group>"; };
+		B525F2B5E2A34C886456F212549348D5 /* Pods-pizza-ManiaTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pizza-ManiaTests-dummy.m"; sourceTree = "<group>"; };
+		B6AB497CA06848F59A34ACBF334A2204 /* Pods-pizza-ManiaTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-ManiaTests-resources.sh"; sourceTree = "<group>"; };
+		B7951A17D228B0022548F8AE6FD92C64 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD071C0C6D52520F33BA9328DAB62517 /* Pods-pizza-ManiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-ManiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C36AD5713578861598ECC80525E3438F /* Pods-pizza-ManiaUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pizza-ManiaUITests-resources.sh"; sourceTree = "<group>"; };
+		C3866999F7F62B5ED33E63FA920010EB /* Pods-pizza-ManiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-ManiaTests.release.xcconfig"; sourceTree = "<group>"; };
+		C7DFF7B71693472C09AF20238C3D5393 /* Pods-pizza-ManiaUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-pizza-ManiaUITests.modulemap"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D04EE5520FB22EC79445EEF6AE9C357E /* Pods-pizza-Mania-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pizza-Mania-acknowledgements.plist"; sourceTree = "<group>"; };
+		D2BBDB85F9B4C24579FA0FC10E9296D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F12B1CBCBBB243759BC2F8909846EC07 /* Pods-pizza-Mania.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pizza-Mania.release.xcconfig"; sourceTree = "<group>"; };
+		F71E35A4F16DEBD2BB342C4EBC7423AB /* Pods-pizza-Mania-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pizza-Mania-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FACF020A99C4BD8FC00AEB98E467D882 /* Pods-pizza-ManiaUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pizza-ManiaUITests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30749D4137EB050F51B76D39D78EBEF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D127F5DFBCF0D085C90164B8A7C1955 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E61316A11817F35B42225652474DF14F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F8E6B4F8DBAA23373AE145828F56F1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F00581269E873F97BF1DD27BDFCFB502 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				275A6BDD6E5ABAA8D2F8313F709D0897 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B33359D1E2C474BFFAE8FFA6058D8F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B294823986FFE924DDE7144ACBEE8C9 /* Pods_pizza_Mania.framework */,
+				053E92B1F40E53BCA2EBA40ED8A83ED5 /* Pods_pizza_ManiaTests.framework */,
+				94A35CACCDFBEF2672667C3E33B58199 /* Pods_pizza_ManiaUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F8039C6D14646739F1ADE515252537B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				71D11E692FCA2874D6772B58E0247ABA /* Pods-pizza-Mania */,
+				CBEF0B9B80D9FD05CF3ADA50020AE84E /* Pods-pizza-ManiaTests */,
+				A387B5234CC2166FAA3CD0A36602864F /* Pods-pizza-ManiaUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		71D11E692FCA2874D6772B58E0247ABA /* Pods-pizza-Mania */ = {
+			isa = PBXGroup;
+			children = (
+				D2BBDB85F9B4C24579FA0FC10E9296D8 /* Info.plist */,
+				5FBD446917B7ED96E7585B0CF1C0A193 /* Pods-pizza-Mania.modulemap */,
+				F71E35A4F16DEBD2BB342C4EBC7423AB /* Pods-pizza-Mania-acknowledgements.markdown */,
+				D04EE5520FB22EC79445EEF6AE9C357E /* Pods-pizza-Mania-acknowledgements.plist */,
+				AD1B2CBAFD72D8A005D249D4FEB1C21B /* Pods-pizza-Mania-dummy.m */,
+				00974881C962B32B9FF458F05AA9E30B /* Pods-pizza-Mania-frameworks.sh */,
+				6642B4F037FBDF5EF03A6B4E91DCE377 /* Pods-pizza-Mania-resources.sh */,
+				A420A128FB8B2993718CE979C0451858 /* Pods-pizza-Mania-umbrella.h */,
+				47E9E0B61FF9C5C8C6CA742CC89E6E21 /* Pods-pizza-Mania.debug.xcconfig */,
+				F12B1CBCBBB243759BC2F8909846EC07 /* Pods-pizza-Mania.release.xcconfig */,
+			);
+			name = "Pods-pizza-Mania";
+			path = "Target Support Files/Pods-pizza-Mania";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0B33359D1E2C474BFFAE8FFA6058D8F1 /* Products */,
+				6F8039C6D14646739F1ADE515252537B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A387B5234CC2166FAA3CD0A36602864F /* Pods-pizza-ManiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4081888AA44258FE43A9FDEB3DCF4FE5 /* Info.plist */,
+				C7DFF7B71693472C09AF20238C3D5393 /* Pods-pizza-ManiaUITests.modulemap */,
+				226565EC9ADFC9FC4B57183B16D55104 /* Pods-pizza-ManiaUITests-acknowledgements.markdown */,
+				8149742D9BC5CBEA3E23D1C9D3DEB70D /* Pods-pizza-ManiaUITests-acknowledgements.plist */,
+				FACF020A99C4BD8FC00AEB98E467D882 /* Pods-pizza-ManiaUITests-dummy.m */,
+				18CEE29E168B3095BCC0E1610CA2FB85 /* Pods-pizza-ManiaUITests-frameworks.sh */,
+				C36AD5713578861598ECC80525E3438F /* Pods-pizza-ManiaUITests-resources.sh */,
+				0D352890543768298C8033717E639FBF /* Pods-pizza-ManiaUITests-umbrella.h */,
+				42B8443ABD24DABF140CEED44536E979 /* Pods-pizza-ManiaUITests.debug.xcconfig */,
+				56A06980F174C92450328437A611D0A1 /* Pods-pizza-ManiaUITests.release.xcconfig */,
+			);
+			name = "Pods-pizza-ManiaUITests";
+			path = "Target Support Files/Pods-pizza-ManiaUITests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBEF0B9B80D9FD05CF3ADA50020AE84E /* Pods-pizza-ManiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7951A17D228B0022548F8AE6FD92C64 /* Info.plist */,
+				08F5A6D4A63E76D4BF4DC8FED68FD8EE /* Pods-pizza-ManiaTests.modulemap */,
+				8B985B38618DAA66747DC0A4D460A5E4 /* Pods-pizza-ManiaTests-acknowledgements.markdown */,
+				10A870ECFD55C83499B331913DE4C0C8 /* Pods-pizza-ManiaTests-acknowledgements.plist */,
+				B525F2B5E2A34C886456F212549348D5 /* Pods-pizza-ManiaTests-dummy.m */,
+				9A96C7F74D2C8E90F3A43CFCFB966FA0 /* Pods-pizza-ManiaTests-frameworks.sh */,
+				B6AB497CA06848F59A34ACBF334A2204 /* Pods-pizza-ManiaTests-resources.sh */,
+				99E3F393FDBEA1920FFC794BEA4E8479 /* Pods-pizza-ManiaTests-umbrella.h */,
+				BD071C0C6D52520F33BA9328DAB62517 /* Pods-pizza-ManiaTests.debug.xcconfig */,
+				C3866999F7F62B5ED33E63FA920010EB /* Pods-pizza-ManiaTests.release.xcconfig */,
+			);
+			name = "Pods-pizza-ManiaTests";
+			path = "Target Support Files/Pods-pizza-ManiaTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F320547BEF6DA3BCE008BFCC644D16A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B5C948BAE64D5CCB49C27768C2355DD /* Pods-pizza-Mania-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A33A7C0E7070F5F7AEF823722455437 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2464841AA41479BCFACB70AA5803E477 /* Pods-pizza-ManiaUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DADEF16BA7E1E223EE95675C21F34CF8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6132BD62F956B03410CA9D89242CFF /* Pods-pizza-ManiaTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08ED555EB7DB852A1EC89C457EE66CF7 /* Pods-pizza-Mania */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000E1AE0384BA7CA0863AA409FA0FC27 /* Build configuration list for PBXNativeTarget "Pods-pizza-Mania" */;
+			buildPhases = (
+				E3157B878927198C45B359463A3C1609 /* Sources */,
+				F00581269E873F97BF1DD27BDFCFB502 /* Frameworks */,
+				7F320547BEF6DA3BCE008BFCC644D16A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-pizza-Mania";
+			productName = "Pods-pizza-Mania";
+			productReference = 1B294823986FFE924DDE7144ACBEE8C9 /* Pods_pizza_Mania.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3834BF39915FA378EE169DCB86BF7AAE /* Pods-pizza-ManiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 273DD29E8F06340D8FCEBC7427751489 /* Build configuration list for PBXNativeTarget "Pods-pizza-ManiaTests" */;
+			buildPhases = (
+				1B30D11FF6FB0DB0D5CAA63890D49C54 /* Sources */,
+				E61316A11817F35B42225652474DF14F /* Frameworks */,
+				DADEF16BA7E1E223EE95675C21F34CF8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-pizza-ManiaTests";
+			productName = "Pods-pizza-ManiaTests";
+			productReference = 053E92B1F40E53BCA2EBA40ED8A83ED5 /* Pods_pizza_ManiaTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AC5332EFB38A7BDD3223F2E8999A0B1A /* Pods-pizza-ManiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F678E947333EBF25C8286AC7C9B85BF /* Build configuration list for PBXNativeTarget "Pods-pizza-ManiaUITests" */;
+			buildPhases = (
+				77057A754C9336EFAF8704662031B99F /* Sources */,
+				30749D4137EB050F51B76D39D78EBEF9 /* Frameworks */,
+				8A33A7C0E7070F5F7AEF823722455437 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-pizza-ManiaUITests";
+			productName = "Pods-pizza-ManiaUITests";
+			productReference = 94A35CACCDFBEF2672667C3E33B58199 /* Pods_pizza_ManiaUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0B33359D1E2C474BFFAE8FFA6058D8F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08ED555EB7DB852A1EC89C457EE66CF7 /* Pods-pizza-Mania */,
+				3834BF39915FA378EE169DCB86BF7AAE /* Pods-pizza-ManiaTests */,
+				AC5332EFB38A7BDD3223F2E8999A0B1A /* Pods-pizza-ManiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B30D11FF6FB0DB0D5CAA63890D49C54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2717A692F5E8F0867BFCF2EC0DC7D50 /* Pods-pizza-ManiaTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77057A754C9336EFAF8704662031B99F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B9B6210F975D3E0A8C4FFE5615F581 /* Pods-pizza-ManiaUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3157B878927198C45B359463A3C1609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC2C19220C1F77A29EDE95D418A3004 /* Pods-pizza-Mania-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		156284431C64CB05C59BDA0595A1E95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		263FC9B61CB8E6A462107FB35C8EE22E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42B8443ABD24DABF140CEED44536E979 /* Pods-pizza-ManiaUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-ManiaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-ManiaUITests/Pods-pizza-ManiaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_ManiaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		32E6BA4D7881205DC83F3E08D405684D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E9E0B61FF9C5C8C6CA742CC89E6E21 /* Pods-pizza-Mania.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-Mania/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-Mania/Pods-pizza-Mania.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_Mania;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45E7FA7BDCE4339D03CC158AAAAEDD19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD071C0C6D52520F33BA9328DAB62517 /* Pods-pizza-ManiaTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-ManiaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-ManiaTests/Pods-pizza-ManiaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_ManiaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DBB7EFA629F37B67F054D0632028B04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F12B1CBCBBB243759BC2F8909846EC07 /* Pods-pizza-Mania.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-Mania/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-Mania/Pods-pizza-Mania.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_Mania;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C382132BB6BF8CA1A911872A2062FD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DD4DBC925D457174E8E5C240AADAFE1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56A06980F174C92450328437A611D0A1 /* Pods-pizza-ManiaUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-ManiaUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-ManiaUITests/Pods-pizza-ManiaUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_ManiaUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FC7988E62901C6BC048CF937C13905F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3866999F7F62B5ED33E63FA920010EB /* Pods-pizza-ManiaTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pizza-ManiaTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pizza-ManiaTests/Pods-pizza-ManiaTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pizza_ManiaTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000E1AE0384BA7CA0863AA409FA0FC27 /* Build configuration list for PBXNativeTarget "Pods-pizza-Mania" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32E6BA4D7881205DC83F3E08D405684D /* Debug */,
+				4DBB7EFA629F37B67F054D0632028B04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		273DD29E8F06340D8FCEBC7427751489 /* Build configuration list for PBXNativeTarget "Pods-pizza-ManiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E7FA7BDCE4339D03CC158AAAAEDD19 /* Debug */,
+				FC7988E62901C6BC048CF937C13905F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C382132BB6BF8CA1A911872A2062FD0D /* Debug */,
+				156284431C64CB05C59BDA0595A1E95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F678E947333EBF25C8286AC7C9B85BF /* Build configuration list for PBXNativeTarget "Pods-pizza-ManiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				263FC9B61CB8E6A462107FB35C8EE22E /* Debug */,
+				DD4DBC925D457174E8E5C240AADAFE1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

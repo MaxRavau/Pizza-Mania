@@ -1,0 +1,6 @@
+framework module Pods_pizza_Mania {
+  umbrella header "Pods-pizza-Mania-umbrella.h"
+
+  export *
+  module * { export * }
+}
