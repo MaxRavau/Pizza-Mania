@@ -79,6 +79,15 @@ class ViewControllerPFaim: UIViewController, UICollectionViewDelegate, UICollect
         cell.labelTitre.text = categorieObject["Titre"] as? String
         cell.labelPrix.text = categorieObject["Prix"] as? String
         
+        cell.ImageCover.layer.borderWidth = 1.5
+        cell.ImageCover.layer.borderColor = UIColor.white.cgColor
+        
+        cell.labelTitre.layer.cornerRadius = 15
+        cell.labelTitre.layer.masksToBounds = true
+        
+        cell.labelPrix.layer.cornerRadius = 15
+        cell.labelPrix.layer.masksToBounds = true
+        
         return cell
     }
     

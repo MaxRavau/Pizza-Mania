@@ -15,6 +15,8 @@ class TableViewCellSandwich: UITableViewCell {
         // Initialization code
     }
     
+    @IBOutlet var labelStaticIngredient: UILabel!
+    @IBOutlet var labelStaticViande: UILabel!
     @IBOutlet var labelTitre: UILabel!
     @IBOutlet var labelViande: UILabel!
     @IBOutlet var labelPrix: UILabel!

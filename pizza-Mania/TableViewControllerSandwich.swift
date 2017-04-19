@@ -69,6 +69,23 @@ class TableViewControllerSandwich: UITableViewController {
         
         cell.labelPrix.layer.cornerRadius = 15
         cell.labelPrix.layer.masksToBounds = true
+        
+        cell.labelTitre.layer.cornerRadius = 15
+        cell.labelTitre.layer.masksToBounds = true
+        
+        cell.labelIngredient.layer.cornerRadius = 15
+        cell.labelIngredient.layer.masksToBounds = true
+        
+        cell.labelViande.layer.cornerRadius = 15
+        cell.labelViande.layer.masksToBounds = true
+        
+        cell.labelPain.layer.cornerRadius = 15
+        cell.labelPain.layer.masksToBounds = true
+        
+        cell.labelStaticViande.layer.cornerRadius = 15
+        cell.labelStaticViande.layer.masksToBounds = true
+        cell.labelStaticIngredient.layer.cornerRadius = 15
+        cell.labelStaticIngredient.layer.masksToBounds = true
 
         cell.labelTitre.text = categorieObject["Titre"] as? String
         cell.labelViande.text = categorieObject["Viande"] as? String

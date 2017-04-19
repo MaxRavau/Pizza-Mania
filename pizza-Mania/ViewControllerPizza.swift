@@ -86,6 +86,8 @@ class ViewControllerPizza: UIViewController, UICollectionViewDelegate, UICollect
             
         }
 
+        cell.labelCategorie.layer.cornerRadius = 15
+        cell.labelCategorie.layer.masksToBounds = true
         
         return cell
     }
