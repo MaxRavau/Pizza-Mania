@@ -34,17 +34,17 @@ class ViewControllerOffre: UIViewController {
         offreView.layer.cornerRadius = 15
         offreView.layer.masksToBounds = true
         offreView.layer.borderWidth = 1.5
-        offreView.layer.borderColor = UIColor.white.cgColor
+        offreView.layer.borderColor = UIColor.black.cgColor
         
         offreView1.layer.cornerRadius = 15
         offreView1.layer.masksToBounds = true
         offreView1.layer.borderWidth = 1.5
-        offreView1.layer.borderColor = UIColor.white.cgColor
+        offreView1.layer.borderColor = UIColor.black.cgColor
         
         offreView2.layer.cornerRadius = 15
         offreView2.layer.masksToBounds = true
         offreView2.layer.borderWidth = 1.5
-        offreView2.layer.borderColor = UIColor.white.cgColor
+        offreView2.layer.borderColor = UIColor.black.cgColor
         
         imageBoitePizza.layer.cornerRadius = 15
         imageBoitePizza.layer.masksToBounds = true

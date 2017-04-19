@@ -217,22 +217,22 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aAP-ef-CoX">
                                 <rect key="frame" x="0.0" y="83" width="414" height="604"/>
-                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CWj-gF-vjx">
+                                <color key="backgroundColor" red="0.41336254140000001" green="0.69674016500000002" blue="0.48777445460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="9" id="CWj-gF-vjx">
                                     <size key="itemSize" width="164" height="207"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Prototype5" id="JcL-Gh-wep" customClass="CollectionViewCellPFaim" customModule="pizza_Mania" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
+                                        <rect key="frame" x="20" y="0.0" width="164" height="207"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5W-Mc-2Rm">
+                                                <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x5W-Mc-2Rm">
                                                     <rect key="frame" x="0.0" y="0.0" width="164" height="207"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JjK-yd-iWB">
@@ -241,7 +241,7 @@
                                                         <constraint firstAttribute="height" constant="21" id="ZEG-ww-HNj"/>
                                                         <constraint firstAttribute="width" constant="164" id="ghy-Kb-20d"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="15"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -251,7 +251,7 @@
                                                         <constraint firstAttribute="height" constant="75" id="J8e-lp-gXL"/>
                                                         <constraint firstAttribute="width" constant="164" id="cBX-bH-e7G"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -292,7 +292,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.41336254140000001" green="0.69674016500000002" blue="0.48777445460000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="rvh-lp-KwA" firstAttribute="trailing" secondItem="Fj9-j7-u9Y" secondAttribute="trailingMargin" id="8f4-bz-Gqm"/>
                                     <constraint firstItem="rvh-lp-KwA" firstAttribute="top" secondItem="Fj9-j7-u9Y" secondAttribute="top" constant="64" id="ux5-IM-jTp"/>
@@ -455,7 +455,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="258" sectionHeaderHeight="28" sectionFooterHeight="28" id="Eh4-tS-gpe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="rM6-9l-2eX">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -466,11 +466,10 @@
                                         <constraint firstAttribute="height" constant="36" id="ORZ-0f-gw7"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="18"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="NE9-iC-rBB" firstAttribute="leading" secondItem="rM6-9l-2eX" secondAttribute="leadingMargin" id="71w-M9-6nb"/>
                                 <constraint firstItem="NE9-iC-rBB" firstAttribute="top" secondItem="rM6-9l-2eX" secondAttribute="top" constant="12" id="cZG-cy-Y80"/>
@@ -495,7 +494,7 @@
                                                 <constraint firstAttribute="width" constant="293" id="tiL-Jm-pga"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="19"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viandes:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rwe-Dp-tZa">
@@ -505,7 +504,7 @@
                                                 <constraint firstAttribute="width" constant="80" id="v6d-p6-Idb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelViande" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDr-MK-5oF">
@@ -515,7 +514,7 @@
                                                 <constraint firstAttribute="height" constant="42" id="kZj-0T-oPr"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.90000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPrix" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvp-12-Y4C">
@@ -536,7 +535,7 @@
                                                 <constraint firstAttribute="width" constant="398" id="q7O-ws-ao2"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LabelPain" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRj-pg-hdh">
@@ -546,7 +545,7 @@
                                                 <constraint firstAttribute="width" constant="265" id="yWb-t8-unK"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="16"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrédients:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvx-RP-Ydr">
@@ -556,7 +555,7 @@
                                                 <constraint firstAttribute="width" constant="113" id="fl2-tH-edQ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Optima-ExtraBlack" family="Optima" pointSize="17"/>
-                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -581,7 +580,7 @@
                                         <constraint firstItem="lDr-MK-5oF" firstAttribute="centerX" secondItem="euS-qq-2FT" secondAttribute="centerX" id="w02-2T-Mgq"/>
                                     </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <outlet property="imageCover" destination="RFc-Zl-DZy" id="x6m-nf-8K6"/>
                                     <outlet property="labelIngredient" destination="vTk-Pf-0w3" id="PD7-Cc-zKZ"/>
@@ -621,7 +620,7 @@
                                     <constraint firstAttribute="height" constant="40" id="dge-TZ-qjO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bE-4T-ZNl">
@@ -676,7 +675,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.79628013959999999" green="0.28594764919999999" blue="0.25946544049999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rn6-Wd-atO" firstAttribute="top" secondItem="VBQ-B2-deg" secondAttribute="bottom" constant="22" id="27X-74-rcL"/>
                             <constraint firstItem="6bE-4T-ZNl" firstAttribute="top" secondItem="S6b-JF-RCn" secondAttribute="bottom" constant="8" symbolic="YES" id="6ZT-zC-Mof"/>
